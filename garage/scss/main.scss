@@ -1,0 +1,631 @@
+$oxblue: rgb(0, 33, 71);
+
+body {
+  margin: 0;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+nav {
+  overflow: hidden;
+  background-color: $oxblue;
+  font-family: Arial, sans-serif;
+  padding: 14px 16px;
+
+  h2 {
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
+
+  }
+
+  a {
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+
+  }
+
+  a:hover, .dropdown:hover, .dropbtn {
+    background-color: deepskyblue;
+
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+
+    .dropbtn {
+      font-size: 1em;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 16px 19px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    a:hover {
+      background-color: gray;
+    }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+}
+
+.searchAuto2 {
+  height: 80vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  th {
+    font-size: 1.5em;
+  }
+
+  td {
+    font-size: 1.5em;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+
+  h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .formSearch1 {
+    font-size: 1.3em;
+  }
+
+  .carPicture {
+    width: 400px;
+    height: 400px;
+  }
+
+  .backMenu {
+    margin-left: 50%;
+
+    a {
+      border: $oxblue groove 2px;
+      box-shadow: 10px 5px 5px #21528c;
+      background-color: #2e5fa1;
+      color: white;
+      text-decoration: none;
+      padding: 14px 16px;
+      align-self: end;
+      font-size: 1.5em;
+    }
+
+    a:hover {
+      background-color: #3778d0;
+      box-shadow: 10px 5px 5px #2861a6;
+    }
+  }
+}
+
+
+.profilePage {
+
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 80%;
+  height: 80vh;
+  //border: black solid 3px;
+  h1 {
+    text-align: center;
+  }
+
+  .imageProfile {
+    display: flex;
+    flex-direction: row;
+    //border: black solid 5px  ;
+
+    justify-content: center;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .formPfp {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.autoStandaard {
+  height: 80vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  label{
+    display: flex;
+   margin-left: 0;
+  }
+
+  .formCreate {
+    display: flex;
+    //border: 3px solid black;
+    justify-content: right;
+    width: 50%;
+    height: 50%;
+
+    button {
+      padding: 12px 15px;
+      float: right;
+      border: $oxblue groove 2px;
+      box-shadow: 10px 5px 5px #21528c;
+      background-color: #2e5fa1;
+      color: white;
+      text-decoration: none;
+      align-self: end;
+      font-size: 1.5em;
+    }
+
+    button:hover {
+      background-color: #3778d0;
+      box-shadow: 10px 5px 5px #2861a6;
+    }
+
+    form {
+      border-collapse: collapse;
+    }
+
+    label {
+      text-align: left;
+      font-size: 1.3em;
+      //float: left;
+    }
+
+    input {
+      height: 1.4em;
+      //float: right;
+
+    }
+
+  }
+
+  tr {
+    border-collapse: collapse;
+  }
+
+  th {
+    font-size: 1.5em;
+    padding: 4px 8px;
+    text-align: right;
+    border: 1px solid gray;
+    border-collapse: collapse;
+
+  }
+
+  td {
+    font-size: 1.5em;
+    padding: 4px 8px;
+    text-align: right;
+    border: 1px solid gray;
+    border-collapse: collapse;
+
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+
+  h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .formSearch1 {
+    font-size: 1.3em;
+  }
+
+  .carPicture {
+    width: 400px;
+    height: 400px;
+  }
+
+  .backMenu {
+    margin-left: 50%;
+
+    a {
+      border: $oxblue groove 2px;
+      box-shadow: 10px 5px 5px #21528c;
+      background-color: #2e5fa1;
+      color: white;
+      text-decoration: none;
+      padding: 14px 16px;
+      align-self: end;
+      font-size: 1.5em;
+    }
+
+    a:hover {
+      background-color: #3778d0;
+      box-shadow: 10px 5px 5px #2861a6;
+    }
+  }
+}
+
+.content_main {
+  margin-left: 8%;
+  margin-top: 10%;
+
+  .backMenu2 {
+    margin-left: 50%;
+
+    a {
+      border: $oxblue groove 2px;
+      box-shadow: 10px 5px 5px #21528c;
+      background-color: #2e5fa1;
+      color: white;
+      text-decoration: none;
+      padding: 14px 22px;
+      align-self: end;
+      font-size: 1.5em;
+    }
+
+    a:hover {
+      background-color: #3778d0;
+      box-shadow: 10px 5px 5px #2861a6;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 60px;
+      color: $oxblue;
+      font-family: fantasy;
+    }
+
+    .links {
+      flex: 1;
+    }
+
+    .rechts {
+      flex: 1;
+    }
+
+    img {
+      width: 400px;
+      height: 300px;
+      margin-left: 50px;
+
+
+    }
+  }
+}
+
+
+.menu{
+
+}
+
+
+
+.klantStandaard{
+
+
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  p{
+    display: flex;
+    margin-left: 325px;
+  }
+
+  label{
+    display: flex;
+  }
+
+  .p{
+    display: flex;
+
+  }
+
+
+  .formCreate {
+    display: flex;
+    //border: 3px solid black;
+    justify-content: right;
+    width: 50%;
+    height: 50%;
+
+    button {
+      padding: 12px 15px;
+      float: right;
+      border: $oxblue groove 2px;
+      box-shadow: 10px 5px 5px #21528c;
+      background-color: #2e5fa1;
+      color: white;
+      text-decoration: none;
+      align-self: end;
+      font-size: 1.5em;
+    }
+
+    button:hover {
+      background-color: #3778d0;
+      box-shadow: 10px 5px 5px #2861a6;
+    }
+
+    form {
+      border-collapse: collapse;
+    }
+
+    label {
+      text-align: left;
+      font-size: 1.3em;
+      //float: left;
+    }
+
+    input {
+      height: 1.4em;
+      //float: right;
+
+    }
+
+  }
+
+  tr {
+    border-collapse: collapse;
+  }
+
+  th {
+    font-size: 1.5em;
+    padding: 4px 8px;
+    text-align: right;
+    border: 1px solid gray;
+    border-collapse: collapse;
+
+  }
+
+  td {
+    font-size: 1.5em;
+    padding: 4px 8px;
+    text-align: right;
+    border: 1px solid gray;
+    border-collapse: collapse;
+
+  }
+
+  div {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+
+  h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .formSearch1 {
+    font-size: 1.3em;
+  }
+
+  .carPicture {
+    width: 400px;
+    height: 400px;
+  }
+
+  .backMenu {
+    flex: 1;
+    margin-left: 50%;
+
+    a {
+      border: $oxblue groove 2px;
+      box-shadow: 10px 5px 5px #21528c;
+      background-color: #2e5fa1;
+      color: white;
+      text-decoration: none;
+      padding: 14px 16px;
+      align-self: end;
+      font-size: 1.5em;
+    }
+
+    a:hover {
+      background-color: #3778d0;
+      box-shadow: 10px 5px 5px #2861a6;
+    }
+  }
+
+
+
+}
+
+.menu{
+  .container{
+    display: flex;
+    justify-content: space-around;
+    div{
+      width: 40%;
+      border: 4px double gray;
+      h2{
+        font-size: 3em;
+      }
+
+     li{
+       border: 2px solid $oxblue;
+       background-color: #2e5fa1;
+       padding: 12px 14px;
+       text-align: center;
+       list-style-type: none;
+       a{
+
+         color: white;
+         text-decoration: none;
+         font-size: 1.5em;
+       }
+     }
+    }
+  }
+  h1{
+    font-size:3em;
+    text-align: center;
+    color: $oxblue;
+  }
+}
+.Over_main{
+  margin-left: 8%;
+  margin-top: 8%;
+
+
+  .Over_ons {
+    display: flex;
+
+    h1 {
+      color: $oxblue;
+      font-weight: bolder;
+      font-family: fantasy;
+      font-size: 70px;
+    }
+
+    p {
+
+      color: black;
+      font-size: 20px;
+      font-family: fantasy;
+
+    }
+    .links_over {
+      flex: 1;
+    }
+
+    .rechts_over {
+      flex: 1;
+    }
+
+    img {
+      width: 400px;
+      height: 350px;
+      margin-bottom: 50px;
+      margin-left: 100px;
+
+
+    }
+  }
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  background-color: lightgray;
+}
+footer{
+  height: 19vh;
+  border: solid 3px black;
+  background-image: url("../pictures/race.png");
+  background-size: contain;
+  .auto{
+    height: 2em;
+    margin-top: 5px ;
+    transform: scaleX(-1);
+    -webkit-animation: drive;
+    -webkit-animation-duration: 8s ;
+    -webkit-animation-iteration-count: infinite;
+    transition: ease;
+  }
+
+  img{
+    position: absolute;
+
+  }
+
+  @-webkit-keyframes drive {
+    0% {
+      transform: translateX(200%) scaleX(-1);
+    }
+    10% {
+      transform: translateX(500%)  translateY(100%) scaleX(-1)
+    }
+    25% {
+      transform: translateX(900%) translateY(150%) scaleX(-1)
+    }
+    50% {
+      transform: translateX(1500%) translateY(250%) scaleX(-1)
+    }
+    60% {
+      transform: translateX(1500%) translateY(300%) scaleX(0)
+    }
+    61% {
+      transform: translateX(1500%) translateY(300%) scaleX(1)
+    }
+    90% {
+      transform: translateX(500%) translateY(150%)  scaleX(1)
+    }
+    100% {
+      transform: translateX(200%)  scaleX(1);
+    }
+  }
+}
