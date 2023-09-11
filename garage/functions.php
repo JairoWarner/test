@@ -1,5 +1,7 @@
 <?php
 
+echo "lol";
+
 function check_login($con)
 {
 
